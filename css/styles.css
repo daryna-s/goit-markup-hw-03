@@ -25,6 +25,15 @@ body {
     color: var(--main-txt-cl);
     background-color:var(--main-bg-cl)
 }
+h1,
+h2,
+h3,
+p{
+    margin: 0;
+}
+img{
+    display: block;
+}
 address {
     font-style: normal;
 }
@@ -44,6 +53,19 @@ address {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
+}
+.container {
+    outline: 1px solid red;
+
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 /* навигация */
 
@@ -73,6 +95,21 @@ address {
 
     color: var(--secondary-txt-cl);
 }
+.item{
+    margin-right: 50px;
+}
+.item:last-child {
+    margin-right: 0;
+}
+.list-item{
+    display: flex;
+    align-items: center;
+}
+.link{
+    display: block;
+    padding-top: 32;
+    padding-bottom: 32;
+}
 .current {
     color: var(--accent-txt-cl);
 }
@@ -82,17 +119,48 @@ address {
 }
 .list {
     list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.list {
+    display: flex;
+    align-items: center;
+}
+.list{
+    margin-right: 0;
+}
+.list:last-child {
+    margin-right: 0;
+}
+.contacts-list{
+    margin-right: 50px;
+}
+.header-container {
+    display: flex;
+    align-items: center;
+}
+.logo{
+    margin-right: 93px;
+}
+.list {
+    margin-left: auto;
 }
 /* контакты */
 
 .mail,
 .phone {
+    display: block;
+
+    padding-top: 32;
+    padding-bottom: 32;
+
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
 
     color: var(--main-txt-cl);
+
 }
 
 /* основная часть */
@@ -101,6 +169,10 @@ address {
     background-color: var(--secondary-bg-cl) ;
 }
 .title-first {
+    margin-right: 30px;
+    margin-bottom: 30px;
+
+
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -111,6 +183,12 @@ address {
     color: var(--next2-txt-cl);
 }
 .button {
+    width: 200px;
+    height: 50px;
+    padding: 10px 32px;
+    min-width: 200px;
+    min-height: 50px;
+
     font-family: inherit;
     font-style: normal;
     font-weight: 700;
@@ -125,12 +203,15 @@ address {
     background-color: var(--accent-bg-cl);
 
     cursor: pointer;
+    border:none;
 }
 .button:hover,
 .button:focus {
     background-color: #188CE8;
 }
-
+.hero-container{
+    width: 696px;
+}
 /* особенности */
 
 .title-third {
@@ -193,7 +274,10 @@ address {
 }
 
 /* футер */
-
+.logo-contacts{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
 .logo-contacts {
     background-color: var(--secondary-bg-cl);
 }
@@ -246,7 +330,26 @@ address {
 .filter-item {
     font-family: inherit;
 }
-
+.filter{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.filter .filter-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.filter .filter-item{
+    margin-right: 8px;
+}
+.filter .filter-item:last-child {
+    margin-right: 0;
+}
+.filter-button{
+    padding: 6px 22px;
+    border: none;
+    border-radius: 4px;
+}
 /* примеры работ */
 
 .examples-item {
