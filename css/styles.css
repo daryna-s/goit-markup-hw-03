@@ -16,6 +16,7 @@
 --accent-bg-cl: #2196F3;
 --next1-bg-cl:#F5F4FA;
 
+--border-cl:#ECECEC;
 }
 /* Главная */
 body {
@@ -140,6 +141,9 @@ address {
 }
 .logo{
     margin-right: 93px;
+}
+.header {
+    border-bottom: 1px solid var(--border-cl);
 }
 
 /* контакты */
@@ -450,21 +454,7 @@ display: block;
     display: flex;
     flex-wrap: wrap;
 }
-.examples-item {
-    display: block;
-    width: 370px;
-    height: 404px;
-    padding: 30px;
-}
-.img-example {
-    margin-bottom: 20px;
-}
-.header-example {
-    margin-bottom: 4px;
-}
-.text-example {
-    margin-bottom: 20px;
-}
+
 /* примеры работ */
 
 .examples-item {
@@ -485,5 +475,39 @@ display: block;
 
     color: var(--main-txt-cl);
 }
+.examples-item {
+    display: block;
+    width: 370px;
+    align-items: center;
+    border: 1px solid var(--border-cl);
+    /* height: 404px; */
+    /* padding: 30px; */
+    margin-right: 30px;
+    margin-bottom: 30px;
+    /* margin-left: 0;
+    margin-top: ; */
+}
 
+.examples-item:nth-of-type(3n) {
+    margin-right: 0;
+    /* margin-bottom: 0; */
+}
+
+.work-examples-list {
+    flex-basis: calc((100% - 30px) / 3);
+}
+
+.img-example {
+    margin-bottom: 20px;
+}
+
+.header-example {
+    margin-bottom: 4px;
+    margin-left: 24px;
+}
+
+.text-example {
+    margin-bottom: 20px;
+    margin-left: 24px;
+}
 
