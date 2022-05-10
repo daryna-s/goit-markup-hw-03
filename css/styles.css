@@ -58,13 +58,10 @@ address {
     overflow: hidden;
 }
 .container {
-    /* outline: 1px solid red; */
-
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
-
 }
 .section {
     padding-top: 94px;
@@ -160,7 +157,6 @@ address {
     letter-spacing: 0.02em;
 
     color: var(--main-txt-cl);
-
 }
 
 /* основная часть */
@@ -285,8 +281,6 @@ address {
     margin-right: 0;
 }
 
-
-
 /* команда */
 
 .employees-container {
@@ -378,8 +372,7 @@ address {
     color: rgba(255, 255, 255, 0.6);
 }
 .logo-contacts .footer-container {
-display: block;
-
+    display: block;
 }
 
 .logo-contacts .logo{
