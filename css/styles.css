@@ -60,14 +60,28 @@ address {
     padding-right: 15px;
     margin: 0 auto;
 }
-.section {
+.section{
     padding-top: 94px;
     padding-bottom: 94px;
 }
-
+.list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+.link {
+    text-decoration: none;
+    color: inherit;
+}
+.work-description{
+    padding-top: 0;
+}
 /* навигация */
 
-
+.header-container {
+    display: flex;
+    align-items: center;
+}
 .header-logo {
     font-family: var(--secondary-font);
     font-weight: 700;
@@ -77,48 +91,38 @@ address {
 
     color: var(--next1-txt-cl);
 }
+.logo {
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    margin-right: 93px;
+
+    color: var(--accent-txt-cl);
+}
 .header {
     border-bottom: 1px solid var(--border-cl);
 }
-.nav-link {
-    padding-top: 32px;
-    padding-bottom: 32px;
-}
-.link {
-    text-decoration: none;
-    color: inherit;
-    list-style: none;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    margin-right: 50px;
-    display: block;
-}
-.link-item {
-    text-decoration: none;
-    color: inherit;
-    padding-top: 32;
-    padding-bottom: 32;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    margin-right: 50px;
-    display: block;
+.list-item {
+    display: flex;
 }
 .item {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
     margin-right: 50px;
-    display: block;
-
-    color: var(--secondary-txt-cl);
 }
 .item:last-child {
     margin-right: 0;
+}
+.nav-link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--secondary-txt-cl)
 }
 .current {
     color: var(--accent-txt-cl);
@@ -127,30 +131,22 @@ address {
 .link:focus {
     color: var(--accent-txt-cl);
 }
-.nav-list,
-.list{
+.nav-list{
     display: flex;
-    align-items: center;
-    list-style: none;
-    padding: 0;
-    margin: 0;
     margin-left: auto;
 }
-.nav-list:last-child {
+.contacts-list:last-child {
     margin-right: 0;
 }
 .contacts-list{
     margin-right: 50px;
 }
-.header-container {
-    display: flex;
-    align-items: center;
-}
-
-/* контакты */
-
 .mail,
 .phone {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
     padding-top: 32px;
     padding-bottom: 32px;
 
@@ -255,6 +251,9 @@ address {
 .work-container {
     display: block;
 }
+.work-list {
+    display: flex;
+}
 .work-item {
     margin-right: 30px;
 }
@@ -264,8 +263,9 @@ address {
 
 /* команда */
 
-.employees-container {
-    display: block;
+
+.team-list {
+    display: flex;
 }
 .team-item:last-child {
     margin-right: 0;
@@ -317,16 +317,7 @@ address {
 
 /* футер */
 
-.logo {
-    font-family: var(--secondary-font);
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-    margin-right: 93px;
 
-    color: var(--accent-txt-cl);
-}
 .logo-contacts {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -362,11 +353,11 @@ address {
     margin-bottom: 20px;
     display: inline-block;
 }
-.logo-contacts .footer-link {
-    margin-bottom: 9px;
-}
-.logo-contacts .footer-link:last-child{
+.footer-link:last-child {
     margin-bottom: 0;
+}
+.footer-link {
+    margin-bottom: 9px;
 }
 .footer-list {
     padding: 0;
@@ -376,9 +367,6 @@ address {
 
 .portfolio-container {
     display: block;
-}
-.filter-list {
-    margin-bottom: 50px;
 }
 
 /* кнопки фильтра */
@@ -406,17 +394,16 @@ address {
 }
 .button-active {
     background-color: var(--accent-bg-cl);
+    color: var(--next2-txt-cl);
 }
-.filter-item {
-    font-family: inherit;
-}
+
 .filter{
     padding-top: 94px;
     padding-bottom: 94px;
 }
 .filter-portfolio{
     display: flex;
-    align-items: center;
+    margin-bottom: 50px;
     justify-content: center;
 }
 .filter .filter-item{
@@ -457,9 +444,9 @@ address {
     margin-bottom: 30px;
 }
 .work-name{
-    display: block;
     padding: 20px 24px 20px 24px;
     border: 1px solid var(--border-cl);
+    border-top: none;
     background-color: var(--main-bg-cl);
 }
 .examples-item:nth-of-type(3n) {
